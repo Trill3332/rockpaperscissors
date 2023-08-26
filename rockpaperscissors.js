@@ -13,6 +13,13 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+const score = {
+    wins : 0,
+    losses : 0,
+    ties : 0
+};
+
+
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice();
 
@@ -51,8 +58,21 @@ function playRound(playerSelection, computerSelection) {
             result = 'Tie';
         }
     }
-    alert(`You selected ${playerSelection}.Computer selected ${computerSelection}.${result}`);
+
+    if (result === 'Win') {
+        score.wins += 1;
+    }
+    else if (result === 'Lose') {
+        score.losses +=1;
+    }
+    else if (result === 'Tie') {
+        score.ties += 1;
+    }
+
+    alert(`You selected ${playerSelection}.Computer selected ${computerSelection}.${result}
+    Wins : ${score.wins}. Losses : ${score.losses}. Ties : ${score.ties}.`);
 }
+
 
 
 
