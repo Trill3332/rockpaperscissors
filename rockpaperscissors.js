@@ -73,6 +73,12 @@ function playRound(playerSelection, computerSelection) {
     Wins : ${score.wins}. Losses : ${score.losses}. Ties : ${score.ties}.`);
 }
 
+function resetScore() {
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+}
+
 
 
 
