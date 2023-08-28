@@ -82,7 +82,7 @@ function resetScore() {
     score.ties = 0;
     updateScoreElement()
     document.querySelector(".js-result")
-    .innerHTML = 'Play '
+    .innerHTML = ''
     enableButtons();
 }
 function updateScoreElement() {

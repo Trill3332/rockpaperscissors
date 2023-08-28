@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
     <title>Rock Paper Scissors</title>
 <body>
-    <h2>Rock Paper Scissors</h2>
-    <button onclick="playRound('rock')" class = "js-movesbutton">Rock</button>
-    <button onclick="playRound('paper')" class = "js-movesbutton">Paper</button>
-    <button onclick="playRound('scissors')" class = "js-movesbutton">Scissors</button>
+    <p class="title">Rock Paper Scissors<p>
+    <button onclick="playRound('rock')" class = "js-movesbutton move-button">
+        <img src="images/rock.png" class="move-icon"></button>
+    <button onclick="playRound('paper')" class = "js-movesbutton move-button">
+        <img src="images/paper.svg" class="move-icon"></button>
+    <button onclick="playRound('scissors')" class = "js-movesbutton move-button">
+        <img src="images/scissors.svg" class="move-icon"></button>
     <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
-    <p class="js-winner"></p>
-    <button onclick="resetScore()">Play Again</button>
+    <p class="js-moves moves-text"></p>
+    <p class="js-score moves-text"></p>
+    <p class="js-winner moves-text"></p>
+    <button onclick="resetScore()" class="playAgain-button">Play Again</button>
     <script src = "rockpaperscissors.js"></script>
 </body>
 </html>

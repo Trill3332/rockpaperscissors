@@ -1,0 +1,33 @@
+body {
+    background-color:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    background :  url(images/rps2.jpg) no-repeat center center fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.title {
+    font-size:25px;
+    font-weight:bold;
+}
+.move-icon {
+    height:100px;
+}
+.move-button {
+    background-color:transparent;
+    border:none;
+    padding:none;
+    cursor:pointer;
+}
+.moves-text {
+    font-size:20px;
+    font-weight:italic;
+}
+.playAgain-button {
+    border:none;
+    background-color:white;
+    font-size:15px;
+    padding:8px 15px;
+    cursor:pointer;
+}
